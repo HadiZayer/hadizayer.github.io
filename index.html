@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hubert Lin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <base target="_blank">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+    ul{
+       padding: 0;
+       list-style-type: none;
+    }
+
+    img {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .text {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 100px);
+    }
+
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  	<!--
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    !-->
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p>
+      <img src="files/somepic.jpg" style='height: 100%; width: 100%; object-fit: contain'  alt="Useful alt-text">
+	  hl2247 <i>{at}</i> cornell.edu<br><br>
+	  Gates Hall 345, Cornell.<br>
+	  Ithaca, NY
+      </p>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Hubert Lin</h1>
+      <p>I am a PhD student in the Computer Science department at Cornell, advised by <a href="https://www.cs.cornell.edu/~kb">Kavita Bala</a>. My interests are in <a href="https://xkcd.com/1425/">Computer Vision</a>.
+	  Previously, I completed a BSc at the University of Toronto, where I double majored in <a href="http://abstrusegoose.com/406">Physics</a> and <a href="https://xkcd.com/1185/">Computer Science</a>.<br><br>
+	  Find me on LinkedIn <a href="https://www.linkedin.com/in/hubert-lin">here</a> or download my CV (Nov 2020)  <a href="files/cv.pdf">here</a>.<br><br>
+
+<!--
+	<h4> 2017 </h4>
+	<p>
+	I am a teaching assistant for <a href="http://www.cs.cornell.edu/courses/cs2800/2017sp/">CS2800: Discrete Structures</a> this spring semester.
+	</p>
+	
+        <h4> 2016 </h4>
+	<p>
+        I am a teaching assistant for <a href="http://www.cs.cornell.edu/courses/cs2112/2016fa/">CS2112: Object-Oriented Design and Data Structures - Honors</a> this fall semester. 
+	</p>
+-->   
+      <hr>
+      <!--
+      <h4>Preprints</h4>
+	  <ul>
+		  <li> None </li>
+
+	  </ul>
+      -->
+
+      <h4>Publications</h4>
+	  <ul>
+		<li> <b><i><a href="https://arxiv.org/abs/2012.02996">Materials In Paintings (MIP): An interdisciplinary dataset for perception, art history, and computer vision</a></i></b>.
+		<br>
+		<a href="https://materialsinpaintings.tudelft.nl">[Dataset Browser]</a>
+		<a href="https://materialsinpaintings.tudelft.nl/about">[Project]</a>
+		<br>
+		&nbsp;Van Zuijlen, M.; <b>Lin, H.</b>; Bala, K.; Pont, S.C.; Wijntes, M.W.A. 
+		<br>
+		PLOS One 2021.
+		</li>
+		<br>
+
+		<li> <b><i><a href="">AutoPhoto: Aesthetic Photo Capture using Reinforcement Learning</a></i></b>.
+		<br>
+		&nbsp;Al-Zayer, H.; <b>Lin, H.</b>; Bala, K. 
+		<br>
+		IROS 2021.
+		</li>
+		<br>
+
+		<img src="files/figs/style_paint_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+		<li> 
+		<b><i><a href="https://arxiv.org/abs/2011.14477">What Can Style Transfer and Paintings Do For Model Robustness?</a></i></b>.
+		<br>
+		<a href="https://www.cs.cornell.edu/projects/style-painting-robustness">[Project]</a>
+		<br>
+		&nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. 
+		<br>
+		CVPR 2021.
+		</li>
+		<br>
+    		</div>
+
+		<img src="files/figs/insights_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+		<li> 
+		<b><i><a href="https://arxiv.org/abs/2011.12276">Insights from a Large-Scale Database of Material Depictions in Paintings</a></i></b>.
+		<br>
+		&nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K.
+		<br>
+		FAPER ICPR 2020.
+		</li>
+		<br>
+		</div>
+
+		<img src="files/figs/silva_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+		<li> 
+			<b><i><a href="files/publications/silva_chi.pdf">Silva: Interactively Assessing Machine Learning Fairness Using Causality</a></i></b>. 
+		<br>
+		&nbsp;Yan, J.N.; Gu, Z.; <b>Lin, H.</b>; Rzeszotarski, J.
+		<br>
+		CHI 2020.
+		</li>
+		<br>
+		</div>
+
+		<img src="files/figs/hppc_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+		<li> <b><i><a href="https://arxiv.org/abs/2003.03464">DeepSemanticHPPC: Hypothesis-based Planning over Uncertain Semantic Point Clouds</a></i></b>.
+		<br>
+		<a href="https://deepsemantichppc.github.io">[Project]</a>
+		<br>
+		&nbsp;<b>Lin, H.*</b>; Han, Y.*; Banfi, J.*; Bala, K.; Campbell, M.
+		<br>
+		ICRA 2020.
+		</li>
+		<br>
+		</div>
+
+		<img src="files/figs/block_anno_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+		<li> <b><i><a href="files/publications/blockannotation_iccv.pdf">Block Annotation: Better Image Annotation with Sub-Image Decomposition</a></i>.</b> 
+		<br>
+		<a href="files/publications/blockannotation_supp_iccv.pdf">[Supplementary]</a>
+		<a href="files/publications/blockannotation_slides_iccv.pdf">[Talk Slides]</a>
+		<a href="block_annotation">[Project]</a>
+		<br>
+		&nbsp;<b>Lin, H.</b>; Upchurch, P.; Bala, K. 
+		<br>
+		ICCV 2019. 
+		</li>
+		<br>
+		</div>
+
+		<img src="files/figs/mattrans_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+		<li> 
+		<b><i><a href="files/publications/mattrans3dv.pdf">Learning Material-Aware Local Descriptors for 3D Shapes</a></i></b>.
+		<br>
+		<a href="files/publications/mattrans_supp_3dv.pdf">[Supplementary]</a>
+		<a href="files/publications/mattrans_slides_oct1_3dv.pdf">[Talk Slides]</a>
+		<a href="mattrans/data.txt">[Download Dataset]</a>
+		<br>
+		&nbsp;<b>Lin, H.</b>; Averkiou, M.; Kalogerakis, E.; Kovacs, B.; Ranade, S.; Kim, V. G.; Chaudhuri, S.; Bala, K.
+		<br>
+		3DV 2018.
+		</li>
+		<br>
+		</div>
+
+		<img src="files/figs/cl_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+		<li>
+		<b><i><a href="http://doi.org/10.1162/COLI_a_00290">Identifying and avoiding confusion in dialogues of people with Alzheimer's Disease</a></i></b>.
+		<br>
+		&nbsp;Chinaei, H.; Chan Currie, L.; Danks, A.; <b>Lin, H.</b>; Mehta, T.; Rudzicz, F. 
+		<br> Computational Linguistics 2017.
+		</li>
+		<br>
+		</div>
+
+	  </ul>
+      <h4>Posters / Talks</h4>
+	  <ul>
+
+	        <li><b><i><a href="">Learning From Paintings Improves Representations For Fabric Recognition</a></i></b>.
+		<br>
+		&nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. V-VSS 2021.
+		</li>
+		<br>
+
+		<li><b><i><a href="">Learning More Robust Neural Network Representations from Paintings of Objects and Materials</a></i></b>.
+		<br>
+		&nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. ICCP Posters 2021.
+		</li>
+		<br>
+
+		<li><b><i><a href="https://theskinofthings2021.github.io">Learning More Robust Neural Network Representations from Paintings of Objects and Materials</a></i></b>.
+		<br>
+		&nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. The Skin of Things 2021.
+		</li>
+		<br>
+
+		<li> <b><i><a href="files/publications/vss_2020.pdf">A Database of Painterly Material Depictions</a></i></b>.
+		<br>
+		&nbsp;Van Zuijlen, M.; <b>Lin, H.</b>; Bala, K.; Pont, S.C.; Wijntes, M.W.A. V-VSS 2020.
+		</li>
+		<br>
+
+	  </ul>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+
+</body>
+</html>
