@@ -16,7 +16,7 @@
     }
     
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    .row.content {height: 390px}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -27,9 +27,13 @@
     
     /* Set black background color, white text and some padding */
     footer {
+      position: absolute;
       background-color: #555;
       color: white;
-      padding: 15px;
+      padding: 20px;
+      bottom: 0;
+      width: 100%;
+      height: 2.5rem;  
     }
     
     /* On small screens, set height to 'auto' for sidenav and grid */
@@ -64,7 +68,7 @@
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-  	<!--
+    <!--
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -88,180 +92,187 @@
     <div class="col-sm-2 sidenav">
       <p>
       <img src="files/somepic.jpg" style='height: 100%; width: 100%; object-fit: contain'  alt="Useful alt-text">
-	  ha366 <i>{at}</i> cornell.edu<br><br>
-	  Gates Hall 345, Cornell.<br>
-	  Ithaca, NY
+    ha366 <i>{at}</i> cornell.edu<br><br>
+    Gates Hall 345, Cornell.<br>
+    Ithaca, NY
       </p>
     </div>
     <div class="col-sm-8 text-left"> 
       <h1>Hadi AlZayer</h1>
       <p>I am a second year MS student in the Computer Science department at Cornell, advised by <a href="https://www.cs.cornell.edu/~kb">Kavita Bala</a> and <a href="http://home.bharathh.info"> Bharath Hariharan</a>. My interests are in Computer Vision and Graphics.</p>
-	  <p>Eariler, I completed a BS at Cornell, with a double majore in Computer Science & Electrical and Computer Engineering and a Math minor. </p>
+    <p>Eariler, I completed a BS at Cornell, with a double major in Computer Science & Electrical and Computer Engineering and a Math minor. </p>
 
-	  <p >I am actively seeking PhD advisors for Fall 2022.</p>
-	  <!-- Find me on LinkedIn <a href="https://www.linkedin.com/in/hubert-lin">here</a> or download my CV (Nov 2020)  <a href="files/cv.pdf">here</a>.<br><br> -->
+    <p >I am actively seeking PhD advisors for Fall 2022.</p>
+    <!-- Find me on LinkedIn <a href="https://www.linkedin.com/in/hubert-lin">here</a> or download my CV (Nov 2020)  <a href="files/cv.pdf">here</a>.<br><br> -->
 
 <!--
-	<h4> 2017 </h4>
-	<p>
-	I am a teaching assistant for <a href="http://www.cs.cornell.edu/courses/cs2800/2017sp/">CS2800: Discrete Structures</a> this spring semester.
-	</p>
-	
+  <h4> 2017 </h4>
+  <p>
+  I am a teaching assistant for <a href="http://www.cs.cornell.edu/courses/cs2800/2017sp/">CS2800: Discrete Structures</a> this spring semester.
+  </p>
+  
         <h4> 2016 </h4>
-	<p>
+  <p>
         I am a teaching assistant for <a href="http://www.cs.cornell.edu/courses/cs2112/2016fa/">CS2112: Object-Oriented Design and Data Structures - Honors</a> this fall semester. 
-	</p>
+  </p>
 -->   
       <hr>
       <!--
       <h4>Preprints</h4>
-	  <ul>
-		  <li> None </li>
+    <ul>
+      <li> None </li>
 
-	  </ul>
+    </ul>
       -->
 
       <h4>Publications</h4>
-	  <ul>
+    <ul>
 
-		<li> <b><i><a href="">AutoPhoto: Aesthetic Photo Capture using Reinforcement Learning</a></i></b>.
-		<br>
-		&nbsp;<b>AlZayer, H. </b>; Lin, H.; Bala, K. 
-		<br>
-		IROS 2021.
-		</li>
-		<br>
-	</ul>
+    <li> <b><i><a href="">AutoPhoto: Aesthetic Photo Capture using Reinforcement Learning</a></i></b>.
+    <br>
+    &nbsp;<b>AlZayer, H. </b>; Lin, H.; Bala, K. 
+    <br>
+    IROS 2021.
+    </li>
+    <br>
+  </ul>
 
-		<h4>Work Experience</h4>
-	  <ul>
+    <h4>Work Experience</h4>
+    <ul>
 
-		<li> <b>Apple (Summer 2021)</b> <br> ML Engineering Intern </li>
-		<br>
+    <li> <b>Apple (Summer 2021)</b> <br> ML Engineering Intern </li>
+    <br>
 
-		<li> <b>Baidu AI Research (Summer 2019)</b> <br>  Research Intern </li>
-		<br>
+    <li> <b>Baidu AI Research (Summer 2019)</b> <br>  Research Intern </li>
+    <br>
 
-		<li> <b>MediVis (Summer 2018)</b> <br> Software Engineering Intern </li>
-		<br>
-	</ul>
-		
+    <li> <b>MediVis (Summer 2018)</b> <br> Software Engineering Intern </li>
+    <br>
+  </ul>
+
+  <h4>Misc.</h4>
+    <ul>
+
+    <li> <b>Non-Academic Interests:</b> Ultra running, road cycling, triathlons, hiking & backpacking </li>
+    <li> <b>Favorite Books:</b> The Idea Factory: Bell Labs by Jon Gertner, Leonardo da Vinci by Walter Isaacson, and 1984 by George Orwell</li>
+  </ul>
+    
 <!-- 
-		<img src="files/figs/style_paint_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-		<li> 
-		<b><i><a href="https://arxiv.org/abs/2011.14477">What Can Style Transfer and Paintings Do For Model Robustness?</a></i></b>.
-		<br>
-		<a href="https://www.cs.cornell.edu/projects/style-painting-robustness">[Project]</a>
-		<br>
-		&nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. 
-		<br>
-		CVPR 2021.
-		</li>
-		<br>
-    		</div>
+    <img src="files/figs/style_paint_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+    <li> 
+    <b><i><a href="https://arxiv.org/abs/2011.14477">What Can Style Transfer and Paintings Do For Model Robustness?</a></i></b>.
+    <br>
+    <a href="https://www.cs.cornell.edu/projects/style-painting-robustness">[Project]</a>
+    <br>
+    &nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. 
+    <br>
+    CVPR 2021.
+    </li>
+    <br>
+        </div>
 
-		<img src="files/figs/insights_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-		<li> 
-		<b><i><a href="https://arxiv.org/abs/2011.12276">Insights from a Large-Scale Database of Material Depictions in Paintings</a></i></b>.
-		<br>
-		&nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K.
-		<br>
-		FAPER ICPR 2020.
-		</li>
-		<br>
-		</div>
+    <img src="files/figs/insights_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+    <li> 
+    <b><i><a href="https://arxiv.org/abs/2011.12276">Insights from a Large-Scale Database of Material Depictions in Paintings</a></i></b>.
+    <br>
+    &nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K.
+    <br>
+    FAPER ICPR 2020.
+    </li>
+    <br>
+    </div>
 
-		<img src="files/figs/silva_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-		<li> 
-			<b><i><a href="files/publications/silva_chi.pdf">Silva: Interactively Assessing Machine Learning Fairness Using Causality</a></i></b>. 
-		<br>
-		&nbsp;Yan, J.N.; Gu, Z.; <b>Lin, H.</b>; Rzeszotarski, J.
-		<br>
-		CHI 2020.
-		</li>
-		<br>
-		</div>
+    <img src="files/figs/silva_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+    <li> 
+      <b><i><a href="files/publications/silva_chi.pdf">Silva: Interactively Assessing Machine Learning Fairness Using Causality</a></i></b>. 
+    <br>
+    &nbsp;Yan, J.N.; Gu, Z.; <b>Lin, H.</b>; Rzeszotarski, J.
+    <br>
+    CHI 2020.
+    </li>
+    <br>
+    </div>
 
-		<img src="files/figs/hppc_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-		<li> <b><i><a href="https://arxiv.org/abs/2003.03464">DeepSemanticHPPC: Hypothesis-based Planning over Uncertain Semantic Point Clouds</a></i></b>.
-		<br>
-		<a href="https://deepsemantichppc.github.io">[Project]</a>
-		<br>
-		&nbsp;<b>Lin, H.*</b>; Han, Y.*; Banfi, J.*; Bala, K.; Campbell, M.
-		<br>
-		ICRA 2020.
-		</li>
-		<br>
-		</div>
+    <img src="files/figs/hppc_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+    <li> <b><i><a href="https://arxiv.org/abs/2003.03464">DeepSemanticHPPC: Hypothesis-based Planning over Uncertain Semantic Point Clouds</a></i></b>.
+    <br>
+    <a href="https://deepsemantichppc.github.io">[Project]</a>
+    <br>
+    &nbsp;<b>Lin, H.*</b>; Han, Y.*; Banfi, J.*; Bala, K.; Campbell, M.
+    <br>
+    ICRA 2020.
+    </li>
+    <br>
+    </div>
 
-		<img src="files/figs/block_anno_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-		<li> <b><i><a href="files/publications/blockannotation_iccv.pdf">Block Annotation: Better Image Annotation with Sub-Image Decomposition</a></i>.</b> 
-		<br>
-		<a href="files/publications/blockannotation_supp_iccv.pdf">[Supplementary]</a>
-		<a href="files/publications/blockannotation_slides_iccv.pdf">[Talk Slides]</a>
-		<a href="block_annotation">[Project]</a>
-		<br>
-		&nbsp;<b>Lin, H.</b>; Upchurch, P.; Bala, K. 
-		<br>
-		ICCV 2019. 
-		</li>
-		<br>
-		</div>
+    <img src="files/figs/block_anno_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+    <li> <b><i><a href="files/publications/blockannotation_iccv.pdf">Block Annotation: Better Image Annotation with Sub-Image Decomposition</a></i>.</b> 
+    <br>
+    <a href="files/publications/blockannotation_supp_iccv.pdf">[Supplementary]</a>
+    <a href="files/publications/blockannotation_slides_iccv.pdf">[Talk Slides]</a>
+    <a href="block_annotation">[Project]</a>
+    <br>
+    &nbsp;<b>Lin, H.</b>; Upchurch, P.; Bala, K. 
+    <br>
+    ICCV 2019. 
+    </li>
+    <br>
+    </div>
 
-		<img src="files/figs/mattrans_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-		<li> 
-		<b><i><a href="files/publications/mattrans3dv.pdf">Learning Material-Aware Local Descriptors for 3D Shapes</a></i></b>.
-		<br>
-		<a href="files/publications/mattrans_supp_3dv.pdf">[Supplementary]</a>
-		<a href="files/publications/mattrans_slides_oct1_3dv.pdf">[Talk Slides]</a>
-		<a href="mattrans/data.txt">[Download Dataset]</a>
-		<br>
-		&nbsp;<b>Lin, H.</b>; Averkiou, M.; Kalogerakis, E.; Kovacs, B.; Ranade, S.; Kim, V. G.; Chaudhuri, S.; Bala, K.
-		<br>
-		3DV 2018.
-		</li>
-		<br>
-		</div>
+    <img src="files/figs/mattrans_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+    <li> 
+    <b><i><a href="files/publications/mattrans3dv.pdf">Learning Material-Aware Local Descriptors for 3D Shapes</a></i></b>.
+    <br>
+    <a href="files/publications/mattrans_supp_3dv.pdf">[Supplementary]</a>
+    <a href="files/publications/mattrans_slides_oct1_3dv.pdf">[Talk Slides]</a>
+    <a href="mattrans/data.txt">[Download Dataset]</a>
+    <br>
+    &nbsp;<b>Lin, H.</b>; Averkiou, M.; Kalogerakis, E.; Kovacs, B.; Ranade, S.; Kim, V. G.; Chaudhuri, S.; Bala, K.
+    <br>
+    3DV 2018.
+    </li>
+    <br>
+    </div>
 
-		<img src="files/figs/cl_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-		<li>
-		<b><i><a href="http://doi.org/10.1162/COLI_a_00290">Identifying and avoiding confusion in dialogues of people with Alzheimer's Disease</a></i></b>.
-		<br>
-		&nbsp;Chinaei, H.; Chan Currie, L.; Danks, A.; <b>Lin, H.</b>; Mehta, T.; Rudzicz, F. 
-		<br> Computational Linguistics 2017.
-		</li>
-		<br>
-		</div>
+    <img src="files/figs/cl_teaser.jpg" width="100px" />&nbsp;<div class="text">   
+    <li>
+    <b><i><a href="http://doi.org/10.1162/COLI_a_00290">Identifying and avoiding confusion in dialogues of people with Alzheimer's Disease</a></i></b>.
+    <br>
+    &nbsp;Chinaei, H.; Chan Currie, L.; Danks, A.; <b>Lin, H.</b>; Mehta, T.; Rudzicz, F. 
+    <br> Computational Linguistics 2017.
+    </li>
+    <br>
+    </div>
 
-	  </ul>
+    </ul>
       <h4>Posters / Talks</h4>
-	  <ul>
+    <ul>
 
-	        <li><b><i><a href="">Learning From Paintings Improves Representations For Fabric Recognition</a></i></b>.
-		<br>
-		&nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. V-VSS 2021.
-		</li>
-		<br>
+          <li><b><i><a href="">Learning From Paintings Improves Representations For Fabric Recognition</a></i></b>.
+    <br>
+    &nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. V-VSS 2021.
+    </li>
+    <br>
 
-		<li><b><i><a href="">Learning More Robust Neural Network Representations from Paintings of Objects and Materials</a></i></b>.
-		<br>
-		&nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. ICCP Posters 2021.
-		</li>
-		<br>
+    <li><b><i><a href="">Learning More Robust Neural Network Representations from Paintings of Objects and Materials</a></i></b>.
+    <br>
+    &nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. ICCP Posters 2021.
+    </li>
+    <br>
 
-		<li><b><i><a href="https://theskinofthings2021.github.io">Learning More Robust Neural Network Representations from Paintings of Objects and Materials</a></i></b>.
-		<br>
-		&nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. The Skin of Things 2021.
-		</li>
-		<br>
+    <li><b><i><a href="https://theskinofthings2021.github.io">Learning More Robust Neural Network Representations from Paintings of Objects and Materials</a></i></b>.
+    <br>
+    &nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. The Skin of Things 2021.
+    </li>
+    <br>
 
-		<li> <b><i><a href="files/publications/vss_2020.pdf">A Database of Painterly Material Depictions</a></i></b>.
-		<br>
-		&nbsp;Van Zuijlen, M.; <b>Lin, H.</b>; Bala, K.; Pont, S.C.; Wijntes, M.W.A. V-VSS 2020.
-		</li>
-		<br> -->
+    <li> <b><i><a href="files/publications/vss_2020.pdf">A Database of Painterly Material Depictions</a></i></b>.
+    <br>
+    &nbsp;Van Zuijlen, M.; <b>Lin, H.</b>; Bala, K.; Pont, S.C.; Wijntes, M.W.A. V-VSS 2020.
+    </li>
+    <br> -->
 
-	  </ul>
+    </ul>
     </div>
   </div>
 </div>
