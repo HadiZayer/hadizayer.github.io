@@ -26,7 +26,7 @@
     }
     
     /* Set black background color, white text and some padding */
-    footer {
+    /*footer {
       position: absolute;
       background-color: #555;
       color: white;
@@ -34,7 +34,24 @@
       bottom: 0;
       width: 100%;
       height: 2.5rem;  
-    }
+    }*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  background-color: #555;
+  color: white;
+}
     
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
@@ -125,7 +142,7 @@
     </ul>
       -->
 
-      <h4>Publications</h4>
+    <h4>Publications</h4>
     <ul>
 
     <li> <b><i><a href="https://hadizayer.github.io/AutoPhoto_webpage/">AutoPhoto: Aesthetic Photo Capture using Reinforcement Learning</a></i></b>.
@@ -137,6 +154,7 @@
     <br>
   </ul>
 
+  
     <h4>Work Experience</h4>
     <ul>
 
@@ -149,6 +167,15 @@
     <li> <b>MediVis (Summer 2018)</b> <br> Software Engineering Intern </li>
     <br>
   </ul>
+
+<h4>Press</h4>
+    <ul>
+
+    <li> <i>Clearpath Robotics covered our autonomous photography project <a href="https://clearpathrobotics.com/blog/2021/12/cornell-university-develops-robot-photographer-using-reinforcement-learning/">here</a>!</i>
+    </li>
+    <br>
+  </ul>
+
 
   <h4>Misc.</h4>
     <ul>
@@ -280,7 +307,7 @@
   </div>
 </div>
 
-<footer class="container-fluid text-center">
+<footer class="footer">
   <p></p>
 </footer>
 
