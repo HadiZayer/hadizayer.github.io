@@ -87,6 +87,22 @@ body {
         width: calc(100% - 100px);
     }
 
+    .papers > tr > td {
+      margin: 0.5em;
+    }
+    .papers > tr > td:first-child  {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+    }
+    .papers > tr > td:nth-child(2) {
+      vertical-align: top;
+      padding: 0.5em;
+    }
+    .papers > tr > td > video {
+      border: 1px solid #333;
+    }
+
   </style>
 </head>
 <body>
@@ -118,7 +134,7 @@ body {
     <div class="col-sm-2 sidenav">
       <p>
       <img src="files/somepic.jpg" style='height: 100%; width: 100%; object-fit: contain'  alt="Useful alt-text">
-    ha366 <i>{at}</i> cornell.edu<br><br>
+    hadi <i>{at}</i> umd.edu<br><br>
     Gates Hall 345, Cornell.<br>
     Ithaca, NY
       </p>
@@ -150,48 +166,70 @@ body {
       -->
 
     <h4>Publications</h4>
-    <ul>
-      <li> <b><i><a href="https://magic-fixup.github.io">Magic Fixup: Streamlining Photo Editing by Watching Dynamic Videos</a></i></b>.
-        <br>
-        &nbsp;<b>Hadi Alzayer</b>, Zhihao Xia, Xuaner (Cecilia) Zhang, Eli Shechtman, Jia-Bin Huang, Michael Gharbi
-        <br>
-        ArXiv 2024
-        </li>
-        <br>
-
-      <li> <b><i><a href="https://world-from-eyes.github.io">Seeing the World through Your Eyes</a></i></b>.
-        <br>
-        &nbsp;<b>Hadi Alzayer*</b>, Kevin Zhang*, Christopher Metzler, Jia-Bin Huang.
-        <br>
-        CVPR 2024 <b>(Oral, 3.3% of accepted papers)</b> 
-        </li>
-        <br>
-
-        <li> <b><i><a href="https://3d-motion-magnification.github.io">3D Motion Magnification: Visualizing Subtle Motions with Time-Varying Neural Fields</a></i></b>.
+    <table>
+      <tbody class="papers">
+      <tr>
+        <td>
+          <video src="files/thumbnails/mfu.mp4" height="200" width="354" autoplay loop muted></video>
+        </td>
+        <td>
+          <b><i><a href="https://magic-fixup.github.io">Magic Fixup: Streamlining Photo Editing by Watching Dynamic Videos</a></i></b>
+          <br>
+          &nbsp;<b>Hadi Alzayer</b>, Zhihao Xia, Xuaner (Cecilia) Zhang, Eli Shechtman, Jia-Bin Huang, Michael Gharbi
+          <br>
+          ArXiv 2024
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <video src="files/thumbnails/rfeyes.mp4" height="200" autoplay loop muted></video>
+        </td>
+        <td>
+          <b><i><a href="https://world-from-eyes.github.io">Seeing the World through Your Eyes</a></i></b>.
+          <br>
+          &nbsp;<b>Hadi Alzayer*</b>, Kevin Zhang*, Christopher Metzler, Jia-Bin Huang.
+          <br>
+          CVPR 2024 <b>(Oral, 3.3% of accepted papers)</b> 
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <video src="files/thumbnails/3d-motion-mag.mp4" height="200" autoplay loop muted></video>
+        </td>
+        <td>
+          <b><i><a href="https://3d-motion-magnification.github.io">3D Motion Magnification: Visualizing Subtle Motions with Time-Varying Neural Fields</a></i></b>.
           <br>
           &nbsp;Brandon Y. Feng*, <b>Hadi Alzayer*</b>, Michael Rubinstein, William T. Freeman, Jia-Bin Huang.
           <br>
-          ICCV 2023 
-          </li>
+          ICCV 2023
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <video src="files/thumbnails/dc2.mp4" height="200" autoplay loop muted></video>
+        </td>
+        <td>
+          <b><i><a href="https://defocus-control.github.io"><b>DC</b><sup>2</sup>: Dual-Camera Defocus Control by Learning to Refocus</a></i></b>.
           <br>
-      <li> <b><i><a href="https://defocus-control.github.io"><b>DC</b><sup>2</sup>: Dual-Camera Defocus Control by Learning to Refocus</a></i></b>.
-        <br>
-        &nbsp;<b>Hadi Alzayer</b>, Abdullah Abuolaim, Leung Chun Chan, Yang Yang, Ying Chen Lou, Jia-Bin Huang, Abhishek Kar.
-        <br>
-        CVPR 2023 <a href="https://www.youtube.com/watch?v=3Hs-tyr4FFA">Two Minute Papers Video</a>.
-        </li>
-        <br>
-
-
-    <li> <b><i><a href="https://hadizayer.github.io/AutoPhoto_webpage/">AutoPhoto: Aesthetic Photo Capture using Reinforcement Learning</a></i></b>.
-    <br>
-    &nbsp;<b>Hadi Alzayer</b>, Hubert Lin, Kavita Bala. 
-    <br>
-    IROS 2021 <b><i> Finalist for Best Enetertainment Paper Award </i></b>
-    </li>
-    <br>
-  </ul>
-
+          &nbsp;<b>Hadi Alzayer</b>, Abdullah Abuolaim, Leung Chun Chan, Yang Yang, Ying Chen Lou, Jia-Bin Huang, Abhishek Kar.
+          <br>
+          CVPR 2023 <a href="https://www.youtube.com/watch?v=3Hs-tyr4FFA">Two Minute Papers Video</a>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <video src="files/thumbnails/autophoto.webm" height="200" autoplay loop muted></video>
+        </td>
+        <td>
+          <b><i><a href="https://hadizayer.github.io/AutoPhoto_webpage/">AutoPhoto: Aesthetic Photo Capture using Reinforcement Learning</a></i></b>.
+          <br>
+          &nbsp;<b>Hadi Alzayer</b>, Hubert Lin, Kavita Bala. 
+          <br>
+          IROS 2021 <b><i> Finalist for Best Entertainment Paper Award </i></b>
+        </td>
+      </tr>
+    </tbody>
+    </table>
   
     <h4>Work Experience</h4>
     <ul>
