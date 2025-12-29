@@ -3,439 +3,517 @@
 <head>
   <title>Hadi Alzayer</title>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9WS2WCGCK9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9WS2WCGCK9');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9WS2WCGCK9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9WS2WCGCK9');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <base target="_blank">
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 270px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
+
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f8f9fa;
+      --text-primary: #1a1a1a;
+      --text-secondary: #6c757d;
+      --accent: #2563eb;
+      --accent-light: #dbeafe;
+      --border: #e5e7eb;
+      --shadow: rgba(0, 0, 0, 0.1);
     }
-    
-    /* Set black background color, white text and some padding */
-    /*footer {
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background: var(--bg-primary);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header Section */
+    header {
+      padding: 60px 0 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .profile-section {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .profile-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent-light);
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    .profile-info h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .profile-info .email {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+
+    .bio {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--text-primary);
+    }
+
+    .new-badge {
+      color: #fa8072;
+      font-weight: 600;
+    }
+
+    /* Main Content */
+    main {
+      padding: 60px 0;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    h2::after {
+      content: '';
       position: absolute;
-      background-color: #555;
-      color: white;
-      padding: 20px;
       bottom: 0;
-      width: 100%;
-      height: 2.5rem;  
-    }*/
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 30px;
-  background-color: #555;
-  color: white;
-}
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+      border-radius: 2px;
     }
 
-    ul{
-       padding: 0;
-       list-style-type: none;
+    /* Publications */
+    .publication-card {
+      display: grid;
+      grid-template-columns: 354px 1fr;
+      gap: 30px;
+      margin-bottom: 40px;
+      padding: 25px;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    img {
-        display: inline-block;
-        vertical-align: top;
+    .publication-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px var(--shadow);
     }
 
-    .text {
-        display: inline-block;
-        vertical-align: top;
-        width: calc(100% - 100px);
-    }
-
-    .papers > tr > td {
-      margin: 0.5em;
-    }
-    .papers > tr > td:first-child  {
-      background-color: black;
+    .publication-video {
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 4px 12px var(--shadow);
+      height: 200px;
       display: flex;
+      align-items: center;
       justify-content: center;
     }
-    .papers > tr > td:nth-child(2) {
-      vertical-align: top;
-      padding: 0.5em;
-    }
-    .papers > tr > td > video {
-      border: 1px solid #333;
+
+    .publication-video video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
     }
 
+    .publication-info h3 {
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .publication-info h3 a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .publication-info h3 a:hover {
+      color: var(--accent);
+    }
+
+    .publication-authors {
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .publication-venue {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .highlight {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-left: 6px;
+    }
+
+    /* Work Experience */
+    .experience-list {
+      list-style: none;
+    }
+
+    .experience-item {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      border-left: 2px solid var(--accent-light);
+    }
+
+    .experience-item::before {
+      content: '';
+      position: absolute;
+      left: -6px;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px var(--bg-primary);
+    }
+
+    .experience-item:last-child {
+      border-left-color: transparent;
+    }
+
+    .experience-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .experience-role {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    /* Press & Misc */
+    .simple-list {
+      list-style: none;
+    }
+
+    .simple-list li {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .simple-list li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .endurance-list {
+      list-style: none;
+      margin-top: 15px;
+    }
+
+    .endurance-list li {
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+
+    .endurance-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* Links */
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #1e40af;
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .profile-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 25px;
+      }
+
+      .profile-image {
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+      }
+
+      .profile-info h1 {
+        font-size: 2rem;
+      }
+
+      .publication-card {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .publication-video {
+        max-width: 100%;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 40px 0 30px;
+      }
+
+      main {
+        padding: 40px 0;
+      }
+
+      section {
+        margin-bottom: 50px;
+      }
+
+      .profile-info h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
   </style>
 </head>
 <body>
-
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <!--
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+  <header>
+    <div class="container">
+      <div class="profile-section">
+        <img src="files/somepic.jpg" alt="Hadi Alzayer" class="profile-image">
+        <div class="profile-info">
+          <h1>Hadi Alzayer</h1>
+          <div class="email">hadi {at} umd.edu</div>
+          <div class="bio">
+            I am a 4th year PhD student at the University of Maryland, advised by <a href="https://jbhuang0604.github.io">Jia-Bin Huang</a>. Since January 2025, I have been on a research visit at Stanford working with Professor <a href="https://jiajunwu.com">Jiajun Wu</a>. Before my PhD, I completed my BS'20 (in ECE and CS) and MS'22 (CS) at Cornell University, and I was fortunate to be advised by <a href="https://www.cs.cornell.edu/~kb">Kavita Bala</a> and <a href="http://home.bharathh.info">Bharath Hariharan</a>.
+            <br><br>
+            <span class="new-badge">[New]</span> I'm looking for full time opportunities starting summer 2026. Feel free to reach out with relevant opportunities!
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    !-->
-  </div>
-</nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p>
-      <img src="files/somepic.jpg" style='height: 100%; width: 100%; object-fit: contain'  alt="Useful alt-text">
-    hadi <i>{at}</i> umd.edu<br>
-      </p>
-    </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Hadi Alzayer</h1>
-      <p>I am a 4th year PhD student at the University of Maryland, advised by <a href="https://jbhuang0604.github.io">Jia-Bin Huang</a>. Since January 2025, I have been on a research visit at Stanford working with Professor <a href="https://jiajunwu.com">Jiajun Wu</a>. Before my PhD, I completed my BS'20 (in ECE and CS) and MS'22 (CS) at Cornell University, and I was fortunate to be advised by <a href="https://www.cs.cornell.edu/~kb">Kavita Bala</a> and <a href="http://home.bharathh.info"> Bharath Hariharan</a>.
+  </header>
 
-    <!-- Find me on LinkedIn <a href="https://www.linkedin.com/in/hubert-lin">here</a> or download my CV (Nov 2020)  <a href="files/cv.pdf">here</a>.<br><br> -->
+  <main>
+    <div class="container">
+      <section id="publications">
+        <h2>Publications</h2>
 
-<!--
-  <h4> 2017 </h4>
-  <p>
-  I am a teaching assistant for <a href="http://www.cs.cornell.edu/courses/cs2800/2017sp/">CS2800: Discrete Structures</a> this spring semester.
-  </p>
-  
-        <h4> 2016 </h4>
-  <p>
-        I am a teaching assistant for <a href="http://www.cs.cornell.edu/courses/cs2112/2016fa/">CS2112: Object-Oriented Design and Data Structures - Honors</a> this fall semester. 
-  </p>
--->   
-      <hr>
-      <!--
-      <h4>Preprints</h4>
-    <ul>
-      <li> None </li>
-
-    </ul>
-      -->
-
-    <h4>Publications</h4>
-    <table>
-      <tbody class="papers">
-        <tr>
-          <td>
-            <video src="files/thumbnails/stylization_teaser.mov" height="200" width="354" autoplay loop muted></video>
-          </td>
-          <td>
-            <b><i><a href="https://coupled-diffusion.github.io">Coupled Diffusion Sampling for Training-Free Multi-View Image Editing</a></i></b>
-            <br>
-            &nbsp;<b>Hadi Alzayer</b>, Yunzhi Zhang, Chen Geng, Jia-Bin Huang, Jiajun Wu
-            <br>
-            preprint 2025
-          </td>
-        </tr>
-        <tr>
-        <tr>
-          <td>
-            <video src="files/thumbnails/relighting.mov" height="200" width="354" autoplay loop muted></video>
-          </td>
-          <td>
-            <b><i><a href="https://relight-to-reconstruct.github.io">Generative Multiview Relighting for 3D Reconstruction under Extreme Illumination Variation</a></i></b>
-            <br>
-            &nbsp;<b>Hadi Alzayer</b>, Philipp Henzler, Jonathan T. Barron, Jia-Bin Huang, Pratul P. Srinivasan, Dor Verbin
-            <br>
-            CVPR 2025 <b>(Highlight)</b>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <video src="files/thumbnails/simvs.mp4" height="200" width="354" autoplay loop muted></video>
-          </td>
-          <td>
-            <b><i><a href="https://alextrevithick.github.io/simvs/">SimVS: Simulating World Inconsistencies for Robust View Synthesis</a></i></b>
-            <br>
-            &nbsp;Alex Trevithick, Roni Paiss, Philipp Henzler, Dor Verbin, Rundi Wu, <b>Hadi Alzayer</b>, Ruiqi Gao, Ben Poole, Jonathan T. Barron, Aleksander Holynski, Ravi Ramamoorthi, Pratul P. Srinivasan
-            <br>
-            CVPR 2025
-          </td>
-        </tr>
-      <tr>
-        <td>
-          <video src="files/thumbnails/mfu.mp4" height="200" width="354" autoplay loop muted></video>
-        </td>
-        <td>
-          <b><i><a href="https://magic-fixup.github.io">Magic Fixup: Streamlining Photo Editing by Watching Dynamic Videos</a></i></b>
-          <br>
-          &nbsp;<b>Hadi Alzayer</b>, Zhihao Xia, Xuaner (Cecilia) Zhang, Eli Shechtman, Jia-Bin Huang, Michael Gharbi
-          <br>
-          Accepted to ACM Transaction on Graphics 2025
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <video src="files/thumbnails/rfeyes.mp4" height="200" autoplay loop muted></video>
-        </td>
-        <td>
-          <b><i><a href="https://world-from-eyes.github.io">Seeing the World through Your Eyes</a></i></b>.
-          <br>
-          &nbsp;<b>Hadi Alzayer*</b>, Kevin Zhang*, Christopher Metzler, Jia-Bin Huang.
-          <br>
-          CVPR 2024 <b>(Oral, 3.3% of accepted papers)</b> 
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <video src="files/thumbnails/3d-motion-mag.mp4" height="200" autoplay loop muted></video>
-        </td>
-        <td>
-          <b><i><a href="https://3d-motion-magnification.github.io">3D Motion Magnification: Visualizing Subtle Motions with Time-Varying Neural Fields</a></i></b>.
-          <br>
-          &nbsp;Brandon Y. Feng*, <b>Hadi Alzayer*</b>, Michael Rubinstein, William T. Freeman, Jia-Bin Huang.
-          <br>
-          ICCV 2023
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <video src="files/thumbnails/dc2.mp4" height="200" autoplay loop muted></video>
-        </td>
-        <td>
-          <b><i><a href="https://defocus-control.github.io"><b>DC</b><sup>2</sup>: Dual-Camera Defocus Control by Learning to Refocus</a></i></b>.
-          <br>
-          &nbsp;<b>Hadi Alzayer</b>, Abdullah Abuolaim, Leung Chun Chan, Yang Yang, Ying Chen Lou, Jia-Bin Huang, Abhishek Kar.
-          <br>
-          CVPR 2023 <a href="https://www.youtube.com/watch?v=3Hs-tyr4FFA">Two Minute Papers Video</a>.
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <video src="files/thumbnails/autophoto.webm" height="200" autoplay loop muted></video>
-        </td>
-        <td>
-          <b><i><a href="https://hadizayer.github.io/AutoPhoto_webpage/">AutoPhoto: Aesthetic Photo Capture using Reinforcement Learning</a></i></b>.
-          <br>
-          &nbsp;<b>Hadi Alzayer</b>, Hubert Lin, Kavita Bala. 
-          <br>
-          IROS 2021 <b><i> Finalist for Best Entertainment Paper Award </i></b>
-        </td>
-      </tr>
-    </tbody>
-    </table>
-  
-    <h4>Work Experience</h4>
-    <ul>
-    <li> <b>Google DeepMind (Summer 2024)</b> <br> Research Intern (Hosted by Dor Verbin, Pratul Srinivasan, and Jon Barron)</li>
-    <br>
-    <li> <b>Adobe (Summer 2023)</b> <br> Research Intern (Hosted by Michaël Gharbi)</li>
-    <br>
-    <li> <b>Google (Summer 2022)</b> <br> Research Intern on the Pixel Camera Team (Hosted by Abhishek Kar and Ryan Chan)</li>
-    <br>
-
-    <li> <b>Apple (Summer 2021)</b> <br> ML Engineering Intern </li>
-    <br>
-
-    <li> <b>Baidu AI Research (Summer 2019)</b> <br>  Research Intern </li>
-    <br>
-
-    <li> <b>MediVis (Summer 2018)</b> <br> Software Engineering Intern </li>
-    <br>
-  </ul>
-
-<h4>Press</h4>
-    <ul>
-
-    <li> <i>Clearpath Robotics covered our autonomous photography project <a href="https://clearpathrobotics.com/blog/2021/12/cornell-university-develops-robot-photographer-using-reinforcement-learning/">here</a>!</i>
-    </li>
-    <br>
-  </ul>
-
-
-  <h4>Misc.</h4>
-    <ul>
-    <li> <b> Endurance Activities: </b>I believe that endurance activities are perfect for condinitioning the mind to handle any challenges in life. Here is a list of some of my recent activities: </li>
-    <li>&nbsp;&nbsp;<b>[04/25/2025] Canyons 100 Miler (FINISHED!!; 32 hours) </b></li>
-    <li>&nbsp;&nbsp;<b>[10/18/2024] Appalachain Trail Four-State Challenge </b></li>
-    <li>&nbsp;&nbsp;<b>[07/15/2023] Tahoe Rim Trail 100 Miler (FINISHED!!; 35 hours) </b></li>
-    <li>&nbsp;&nbsp;<b>[06/10/2023] Mt. Umunhum 52 Miler </b></li>
-    <li>&nbsp;&nbsp;<b>[12/18/2022] Appalachain Trail Four-State Challenge </b></li>
-    <li>&nbsp;&nbsp;<b>[11/19/2022] JFK 50 Mile run </b></li>
-    <li>&nbsp;&nbsp;<b>[08/07/2022] Skyline 50k </b></li>
-    <li>&nbsp;&nbsp;<b>[07/16/2022] Tahoe Rim Trail 100 Miler (DNF; completed 80 miles out of 102) </b></li>
-    <li>&nbsp;&nbsp;<b>[06/11/2022] Mt. Umunhum 50k </b></li>
-    <li>&nbsp;&nbsp;<b>[11/20/2021] JFK 50 Mile run </b></li>
-    <li>&nbsp;&nbsp;<b>[10/11/2021] Biking up Whiteface Mountain</b></li>
-    <li>&nbsp;&nbsp;<b>[09/04/2021] Lake George Half-IRONMAN distance triathlon</b></li>
-    <li>&nbsp;&nbsp;<b>[07/10/2021] Mt. Hood 50k run</b></li>
-    
-  </ul>
-    
-<!-- 
-    <img src="files/figs/style_paint_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-    <li> 
-    <b><i><a href="https://arxiv.org/abs/2011.14477">What Can Style Transfer and Paintings Do For Model Robustness?</a></i></b>.
-    <br>
-    <a href="https://www.cs.cornell.edu/projects/style-painting-robustness">[Project]</a>
-    <br>
-    &nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. 
-    <br>
-    CVPR 2021.
-    </li>
-    <br>
+        <div class="publication-card">
+          <div class="publication-video">
+            <video src="files/thumbnails/stylization_teaser.mov" autoplay loop muted playsinline></video>
+          </div>
+          <div class="publication-info">
+            <h3><a href="https://coupled-diffusion.github.io">Coupled Diffusion Sampling for Training-Free Multi-View Image Editing</a></h3>
+            <div class="publication-authors"><strong>Hadi Alzayer</strong>, Yunzhi Zhang, Chen Geng, Jia-Bin Huang, Jiajun Wu</div>
+            <div class="publication-venue">preprint 2025</div>
+          </div>
         </div>
 
-    <img src="files/figs/insights_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-    <li> 
-    <b><i><a href="https://arxiv.org/abs/2011.12276">Insights from a Large-Scale Database of Material Depictions in Paintings</a></i></b>.
-    <br>
-    &nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K.
-    <br>
-    FAPER ICPR 2020.
-    </li>
-    <br>
+        <div class="publication-card">
+          <div class="publication-video">
+            <video src="files/thumbnails/relighting.mov" autoplay loop muted playsinline></video>
+          </div>
+          <div class="publication-info">
+            <h3><a href="https://relight-to-reconstruct.github.io">Generative Multiview Relighting for 3D Reconstruction under Extreme Illumination Variation</a></h3>
+            <div class="publication-authors"><strong>Hadi Alzayer</strong>, Philipp Henzler, Jonathan T. Barron, Jia-Bin Huang, Pratul P. Srinivasan, Dor Verbin</div>
+            <div class="publication-venue">CVPR 2025<span class="highlight">Highlight</span></div>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="publication-video">
+            <video src="files/thumbnails/simvs.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="publication-info">
+            <h3><a href="https://alextrevithick.github.io/simvs/">SimVS: Simulating World Inconsistencies for Robust View Synthesis</a></h3>
+            <div class="publication-authors">Alex Trevithick, Roni Paiss, Philipp Henzler, Dor Verbin, Rundi Wu, <strong>Hadi Alzayer</strong>, Ruiqi Gao, Ben Poole, Jonathan T. Barron, Aleksander Holynski, Ravi Ramamoorthi, Pratul P. Srinivasan</div>
+            <div class="publication-venue">CVPR 2025</div>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="publication-video">
+            <video src="files/thumbnails/mfu.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="publication-info">
+            <h3><a href="https://magic-fixup.github.io">Magic Fixup: Streamlining Photo Editing by Watching Dynamic Videos</a></h3>
+            <div class="publication-authors"><strong>Hadi Alzayer</strong>, Zhihao Xia, Xuaner (Cecilia) Zhang, Eli Shechtman, Jia-Bin Huang, Michael Gharbi</div>
+            <div class="publication-venue">ACM Transaction on Graphics 2025</div>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="publication-video">
+            <video src="files/thumbnails/rfeyes.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="publication-info">
+            <h3><a href="https://world-from-eyes.github.io">Seeing the World through Your Eyes</a></h3>
+            <div class="publication-authors"><strong>Hadi Alzayer*</strong>, Kevin Zhang*, Christopher Metzler, Jia-Bin Huang</div>
+            <div class="publication-venue">CVPR 2024<span class="highlight">Oral, 3.3%</span></div>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="publication-video">
+            <video src="files/thumbnails/3d-motion-mag.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="publication-info">
+            <h3><a href="https://3d-motion-magnification.github.io">3D Motion Magnification: Visualizing Subtle Motions with Time-Varying Neural Fields</a></h3>
+            <div class="publication-authors">Brandon Y. Feng*, <strong>Hadi Alzayer*</strong>, Michael Rubinstein, William T. Freeman, Jia-Bin Huang</div>
+            <div class="publication-venue">ICCV 2023</div>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="publication-video">
+            <video src="files/thumbnails/dc2.mp4" autoplay loop muted playsinline></video>
+          </div>
+          <div class="publication-info">
+            <h3><a href="https://defocus-control.github.io">DC<sup>2</sup>: Dual-Camera Defocus Control by Learning to Refocus</a></h3>
+            <div class="publication-authors"><strong>Hadi Alzayer</strong>, Abdullah Abuolaim, Leung Chun Chan, Yang Yang, Ying Chen Lou, Jia-Bin Huang, Abhishek Kar</div>
+            <div class="publication-venue">CVPR 2023 <a href="https://www.youtube.com/watch?v=3Hs-tyr4FFA">Two Minute Papers Video</a></div>
+          </div>
+        </div>
+
+        <div class="publication-card">
+          <div class="publication-video">
+            <video src="files/thumbnails/autophoto.webm" autoplay loop muted playsinline></video>
+          </div>
+          <div class="publication-info">
+            <h3><a href="https://hadizayer.github.io/AutoPhoto_webpage/">AutoPhoto: Aesthetic Photo Capture using Reinforcement Learning</a></h3>
+            <div class="publication-authors"><strong>Hadi Alzayer</strong>, Hubert Lin, Kavita Bala</div>
+            <div class="publication-venue">IROS 2021<span class="highlight">Best Paper Finalist</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Recent Internships</h2>
+        <ul class="experience-list">
+          <li class="experience-item">
+            <div class="experience-title">Google DeepMind (Summer 2024)</div>
+            <div class="experience-role">Research Intern (Hosted by Dor Verbin, Pratul Srinivasan, and Jon Barron)</div>
+          </li>
+          <li class="experience-item">
+            <div class="experience-title">Adobe (Summer 2023)</div>
+            <div class="experience-role">Research Intern (Hosted by Michaël Gharbi)</div>
+          </li>
+          <li class="experience-item">
+            <div class="experience-title">Google (Summer 2022)</div>
+            <div class="experience-role">Research Intern on the Pixel Camera Team (Hosted by Abhishek Kar and Ryan Chan)</div>
+          </li>
+          <li class="experience-item">
+            <div class="experience-title">Apple (Summer 2021)</div>
+            <div class="experience-role">ML Engineering Intern</div>
+          </li>
+          <!-- <li class="experience-item">
+            <div class="experience-title">Baidu AI Research (Summer 2019)</div>
+            <div class="experience-role">Research Intern</div>
+          </li>
+          <li class="experience-item">
+            <div class="experience-title">MediVis (Summer 2018)</div>
+            <div class="experience-role">Software Engineering Intern</div>
+          </li> -->
+        </ul>
+      </section>
+
+      <!-- <section id="press">
+        <h2>Press</h2>
+        <ul class="simple-list">
+          <li>Clearpath Robotics covered our autonomous photography project <a href="https://clearpathrobotics.com/blog/2021/12/cornell-university-develops-robot-photographer-using-reinforcement-learning/">here</a>!</li>
+        </ul>
+      </section> -->
+
+      <section id="misc">
+        <h2>Outside of research..</h2>
+        <p style="margin-bottom: 20px;">I believe that endurance activities are perfect for conditioning the mind to handle any challenges in life. Here is a list of some of my recent activities:</p>
+        <ul class="endurance-list">
+          <li><strong>[08/17/2025]</strong> Rae Lakes Loop trail run (~40 miles)</li>
+          <li><strong>[08/02/2025]</strong> Summitting Glacier Peak in WA (Thanks <a href="https://ricardomartinbrualla.com">Ricardo</a> for taking me!)</li>
+          <li><strong>[04/25/2025]</strong> Canyons 100 Miler (Finished!; 32 hours)</li>
+          <li><strong>[10/18/2024]</strong> Appalachian Trail Four-State Challenge</li>
+          <li><strong>[07/15/2023]</strong> Tahoe Rim Trail 100 Miler (DNF; at mile 59. Unfortunate..)</li>
+          <li><strong>[07/15/2023]</strong> Tahoe Rim Trail 100 Miler (Finished!; 35 hours)</li>
+          <li><strong>[06/10/2023]</strong> Mt. Umunhum 52 Miler</li>
+          <li><strong>[12/18/2022]</strong> Appalachian Trail Four-State Challenge</li>
+          <li><strong>[11/19/2022]</strong> JFK 50 Mile run</li>
+          <li><strong>[08/07/2022]</strong> Skyline 50k</li>
+          <li><strong>[07/16/2022]</strong> Tahoe Rim Trail 100 Miler (DNF; completed 80 miles out of 102)</li>
+          <li><strong>[06/11/2022]</strong> Mt. Umunhum 50k</li>
+          <li><strong>[11/20/2021]</strong> JFK 50 Mile run</li>
+          <li><strong>[10/11/2021]</strong> Biking up Whiteface Mountain</li>
+          <li><strong>[09/04/2021]</strong> Lake George Half-IRONMAN distance triathlon</li>
+          <li><strong>[07/10/2021]</strong> Mt. Hood 50k run</li>
+        </ul>
+      </section>
     </div>
-
-    <img src="files/figs/silva_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-    <li> 
-      <b><i><a href="files/publications/silva_chi.pdf">Silva: Interactively Assessing Machine Learning Fairness Using Causality</a></i></b>. 
-    <br>
-    &nbsp;Yan, J.N.; Gu, Z.; <b>Lin, H.</b>; Rzeszotarski, J.
-    <br>
-    CHI 2020.
-    </li>
-    <br>
-    </div>
-
-    <img src="files/figs/hppc_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-    <li> <b><i><a href="https://arxiv.org/abs/2003.03464">DeepSemanticHPPC: Hypothesis-based Planning over Uncertain Semantic Point Clouds</a></i></b>.
-    <br>
-    <a href="https://deepsemantichppc.github.io">[Project]</a>
-    <br>
-    &nbsp;<b>Lin, H.*</b>; Han, Y.*; Banfi, J.*; Bala, K.; Campbell, M.
-    <br>
-    ICRA 2020.
-    </li>
-    <br>
-    </div>
-
-    <img src="files/figs/block_anno_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-    <li> <b><i><a href="files/publications/blockannotation_iccv.pdf">Block Annotation: Better Image Annotation with Sub-Image Decomposition</a></i>.</b> 
-    <br>
-    <a href="files/publications/blockannotation_supp_iccv.pdf">[Supplementary]</a>
-    <a href="files/publications/blockannotation_slides_iccv.pdf">[Talk Slides]</a>
-    <a href="block_annotation">[Project]</a>
-    <br>
-    &nbsp;<b>Lin, H.</b>; Upchurch, P.; Bala, K. 
-    <br>
-    ICCV 2019. 
-    </li>
-    <br>
-    </div>
-
-    <img src="files/figs/mattrans_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-    <li> 
-    <b><i><a href="files/publications/mattrans3dv.pdf">Learning Material-Aware Local Descriptors for 3D Shapes</a></i></b>.
-    <br>
-    <a href="files/publications/mattrans_supp_3dv.pdf">[Supplementary]</a>
-    <a href="files/publications/mattrans_slides_oct1_3dv.pdf">[Talk Slides]</a>
-    <a href="mattrans/data.txt">[Download Dataset]</a>
-    <br>
-    &nbsp;<b>Lin, H.</b>; Averkiou, M.; Kalogerakis, E.; Kovacs, B.; Ranade, S.; Kim, V. G.; Chaudhuri, S.; Bala, K.
-    <br>
-    3DV 2018.
-    </li>
-    <br>
-    </div>
-
-    <img src="files/figs/cl_teaser.jpg" width="100px" />&nbsp;<div class="text">   
-    <li>
-    <b><i><a href="http://doi.org/10.1162/COLI_a_00290">Identifying and avoiding confusion in dialogues of people with Alzheimer's Disease</a></i></b>.
-    <br>
-    &nbsp;Chinaei, H.; Chan Currie, L.; Danks, A.; <b>Lin, H.</b>; Mehta, T.; Rudzicz, F. 
-    <br> Computational Linguistics 2017.
-    </li>
-    <br>
-    </div>
-
-    </ul>
-      <h4>Posters / Talks</h4>
-    <ul>
-
-          <li><b><i><a href="">Learning From Paintings Improves Representations For Fabric Recognition</a></i></b>.
-    <br>
-    &nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. V-VSS 2021.
-    </li>
-    <br>
-
-    <li><b><i><a href="">Learning More Robust Neural Network Representations from Paintings of Objects and Materials</a></i></b>.
-    <br>
-    &nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. ICCP Posters 2021.
-    </li>
-    <br>
-
-    <li><b><i><a href="https://theskinofthings2021.github.io">Learning More Robust Neural Network Representations from Paintings of Objects and Materials</a></i></b>.
-    <br>
-    &nbsp;<b>Lin, H.</b>; Van Zuijlen, M.; Wijntes, M.W.A.; Pont, S.C.; Bala, K. The Skin of Things 2021.
-    </li>
-    <br>
-
-    <li> <b><i><a href="files/publications/vss_2020.pdf">A Database of Painterly Material Depictions</a></i></b>.
-    <br>
-    &nbsp;Van Zuijlen, M.; <b>Lin, H.</b>; Bala, K.; Pont, S.C.; Wijntes, M.W.A. V-VSS 2020.
-    </li>
-    <br> -->
-
-    </ul>
-    </div>
-  </div>
-</div>
-
-<footer class="footer">
-  <p></p>
-</footer>
-
+  </main>
 </body>
 </html>
