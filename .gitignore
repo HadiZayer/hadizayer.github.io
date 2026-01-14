@@ -1,0 +1,94 @@
+# =========================
+# OS / Editor files
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Dependency directories
+# =========================
+node_modules/
+vendor/
+
+# =========================
+# Build outputs
+# =========================
+dist/
+build/
+out/
+.cache/
+.tmp/
+
+# =========================
+# Static site generators
+# =========================
+
+## Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+## Hugo
+public/
+resources/_gen/
+
+## Gatsby
+.cache/
+public/
+
+## Next.js
+.next/
+
+## Astro
+.astro/
+
+## Vite
+.vite/
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Deployment artifacts
+# =========================
+.vercel/
+.netlify/
+.firebase/
+.now/
+
+# =========================
+# Certificates / secrets
+# =========================
+*.pem
+*.key
+
+# =========================
+# Misc
+# =========================
+coverage/
+
